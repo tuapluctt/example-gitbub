@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY BUS</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/logo72x72.png">
+    <link rel="icon" type="image/icon" sizes="32x32" href="./assets/favicon/logo32x32.png">
+    <link rel="icon" type="image/icon" sizes="16x16" href="./assets/favicon/logo16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Script -->
+    <script src="./assets/js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+
+    <!-- Main -->
+    <main class="profile">
+        <div class="container">
+            <!-- Profile content -->
+            <div class="profile-container">
+                <div class="row gy-md-3">
+                    <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+                        <aside class="profile__sidebar">
+                            <!-- Menu 1 -->
+                            <div class="profile-menu">
+                                <img src="./assets/icons/Profile.svg" alt="" class="profile-menu__icon">
+                                <span class="profile-menu__title">Thông tin tài khoản</span>
+                            </div>
+            
+                            <!-- Menu 2 -->
+                            <div class="profile-menu">
+                                <img src="./assets/icons/History.svg" alt="" class="profile-menu__icon">
+                                <span class="profile-menu__title">Lịch sử mua vé</span>
+                            </div>
+            
+                            <!-- Menu 3 -->
+                            <div class="profile-menu">
+                                <img src="./assets/icons/Address.svg" alt="" class="profile-menu__icon">
+                                <span class="profile-menu__title">Địa chỉ của bạn</span>
+                            </div>
+            
+                            <!-- Menu 4 -->
+                            <div class="profile-menu">
+                                <img src="./assets/icons/Profile.svg" alt="" class="profile-menu__icon">
+                                <span class="profile-menu__title">Đặt lại mật khẩu</span>
+                            </div>
+                            <!-- Menu 5 -->
+                            <div class="profile-menu">
+                                <img src="./assets/icons/Logout.svg" alt="" class="profile-menu__icon">
+                                <span class="profile-menu__title">Đăng xuất</span>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-9 col-xl-8 col-lg-12">
+                        <div class="profile-sidebar">
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <h2 class="profile-sidebar__heading">
+                                        <a href="./profile.html">
+                                            <img src="./assets/icons/arrow-left.svg" alt="" class="icon profile-siderbar__icon">
+                                        </a>
+                                        Thông tin tài khoản
+                                    </h2>
+                                    <p class="profile-sidebar__desc">Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                    
+                                    <form action="./profile.html" class="form form-card">
+                                        <!-- Form row 1 -->
+                                        <div class="form__row">
+                                            <div class="form__group">
+                                                <label for="full-name" class="form__label form-card__label">Full Name</label>
+                                                <div class="form__text-input">
+                                                    <input type="text" name="" id="full-name" autofocus placeholder="Full Name"
+                                                        class="form__input" required>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error">
+                                                </div>
+                                                <p class="form__error">Request enter full information</p>
+                                            </div>
+                                            <div class="form__group">
+                                                <label for="email-address" class="form__label form-card__label">Email Address</label>
+                                                <div class="form__text-input">
+                                                    <input type="text" name="" id="email-address" placeholder="Email Address"
+                                                        class="form__input" required>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error">
+                                                </div>
+                                                <p class="form__error">Request enter full information</p>
+                                            </div>
+                                        </div>
+                                        <!-- Form row 2 -->
+                                        <div class="form__row">
+                                            <div class="form__group">
+                                                <label for="phone-number" class="form__label form-card__label">Phone Number</label>
+                                                <div class="form__text-input">
+                                                    <input type="tel" name="" id="phone-number" placeholder="Phone Number"
+                                                        class="form__input" required>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error">
+                                                </div>
+                                                <p class="form__error">Request enter full information</p>
+                                            </div>
+                                            <div class="form__group">
+                                                <label for="password" class="form__label form-card__label">Password</label>
+                                                <div class="form__text-input">
+                                                    <input type="password" name="" id="password" placeholder="Password" class="form__input"
+                                                        required>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error">
+                                                </div>
+                                                <p class="form__error">Request enter full information</p>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="form-card__bottom">
+                                            <a href="./profile.html" class="btn btn--text">Cancel</a>
+                                            <button class="btn btn--primary btn--rounded">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./templates/footer.html");
+    </script>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
